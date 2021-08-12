@@ -1,6 +1,6 @@
 package ect;
 
-public class Q1 {
+public class Greedy_q1 {
 	public static void main(String[] args) {
 		int n = 1260;
 		int cnt = 0;
