@@ -7,6 +7,9 @@ public class Greedy_q1 {
 	구하세요. 단 거슬러 줘야 할 돈 N은 항상 10의 배수입니다. **/
 	
 	public static void main(String[] args) {
+		//코드 실행 전에 시간 받아오기
+		long start = System.currentTimeMillis();
+		
 		int n = 1260;
 		int cnt = 0;
 		int[] cointype = {500, 100, 50, 10};
@@ -16,5 +19,9 @@ public class Greedy_q1 {
 			n %= cointype[i];
 		}
 		System.out.println(cnt);
+		
+		// 코드 실행 후에 시간 받아오기
+		long end = System.currentTimeMillis();
+		System.out.println("수행시간: " + (end - start) + " ms");
 	}
 }
