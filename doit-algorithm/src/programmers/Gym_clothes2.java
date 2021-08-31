@@ -1,36 +1,47 @@
 package programmers;
 
+import java.util.Arrays;
 import java.util.HashSet;
 
 public class Gym_clothes2 {
-	public int solution(int n, int[] lost, int[] reserve) {
-	int answer = n; 
+	public static void main(String[] args) {
+		
+		// 
+		int answer = 5;
+		int[] lost = {4,2,5};
+		int[] reserve = {2,1,4};
 	
-	HashSet<Integer> resList = new HashSet<>();
-	HashSet<Integer> losList = new HashSet<>();
+	Arrays.sort(lost);
+    Arrays.sort(reserve);	
+		
+	HashSet<Integer> rList = new HashSet<>();
+	HashSet<Integer> lList = new HashSet<>();
 	
 	for (int i : reserve) {
-		resList.add(i);
+		rList.add(i);
 	}
+	System.out.println(rList);
 	
 	for (int i : lost) { 
-		if(resList.contains(i)) {
-			resList.remove(i);
+		if(rList.contains(i)) {
+			rList.remove(i);
 		}
-		else losList.add(i);{
+		else lList.add(i);{
 			}
 		} 
+	System.out.println(rList);
+	System.out.println(lList);
 	
 	for (int i : lost) { 
-			if(losList.contains(i)) { 
-				if(resList.contains(i-1)) 
-					resList.remove(i-1); 
-				else if(resList.contains(i+1)) 
-					resList.remove(i+1); 
+			if(lList.contains(i)) { 
+				if(rList.contains(i-1)) 
+					rList.remove(i-1); 
+				else if(rList.contains(i+1)) 
+					rList.remove(i+1); 
 				else answer--; 
 				} 
 			} 
-	return answer;
+	System.out.println(answer);
 
 	}
 }
