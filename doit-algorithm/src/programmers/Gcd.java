@@ -16,7 +16,6 @@ public class Gcd {
 		// 최대 공약수 구하기
 		answer[1] = (n/answer[0]) * (m/answer[0]) * answer[0];
 		System.out.println(Arrays.toString(answer));
-		
 	}
 	
 	// 유클리드 호제법을 이용해 최대공약수 구하기
