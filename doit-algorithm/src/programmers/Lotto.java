@@ -36,7 +36,7 @@ public class Lotto {
 		System.out.println(total);
 		System.out.println(match);
 		System.out.println(zero);
-		
+		 
 		System.out.println(Arrays.toString(answer));
 		
 	}
