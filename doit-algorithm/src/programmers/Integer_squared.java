@@ -1,6 +1,6 @@
 package programmers;
 
-public class Exponentiation {
+public class Integer_squared {
 	public static void main(String[] args) {
 		long n = 121;
 		long answer = 0;
