@@ -6,6 +6,7 @@ public class JadenCase {
 	public static void main(String[] args) {
 		String s = "3people unFollowed me";
 		
+		// 문자열을 StringBuilder로 만들기
 		StringBuilder answer = new StringBuilder();
 		
 		// 문자열을 전부 분리
