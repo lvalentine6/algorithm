@@ -8,11 +8,11 @@ public class Matrix_multiplication {
 		int[][] arr2 = {{3,3},{3,3}};
 		int[][] answer = new int[arr1.length][arr2[0].length];
 		
-//		answer[0][0] = arr1[0][0] * arr2[0][0] + arr1[0][1] * arr2[1][0];
-		
 		for(int i=0; i<arr1.length; i++) {
-			for(int j=0; j<arr1.length; j++) {
-				answer[i][j] = arr1[i][j] * arr2[i][j] + arr1[i][j+1] * arr2[i+1][j];
+			for(int j=0; j<arr2[0].length; j++) {
+				for(int k=0; k<arr1[0].length; k++) {
+					answer[i][j] += arr1[i][k] * arr2[k][j];
+				}
 			}
 		}
 		System.out.println(arr1.length);
