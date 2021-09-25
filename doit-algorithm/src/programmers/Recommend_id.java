@@ -20,6 +20,8 @@ public class Recommend_id {
 			}
 //					System.out.println(regex);
 		}
+		
+		
 		System.out.println(list);
 		System.out.println(new_id);
 	}
