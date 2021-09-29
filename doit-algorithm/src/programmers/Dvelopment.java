@@ -29,7 +29,7 @@ public class Dvelopment {
 		}
 		
 		System.out.println(answer);
-		System.out.println(answer.stream().mapToInt(Integer::intValue).toArray());
+		System.out.println(answer.stream().mapToInt(i->i).toArray());
 		
 	}
 }
