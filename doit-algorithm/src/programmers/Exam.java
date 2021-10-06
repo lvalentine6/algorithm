@@ -28,7 +28,7 @@ public class Exam {
 			
 			}
 		
-		// 최대값 3개도 이런식으로 가능
+		// 최대값 3개도 이런식으로 가능 (for문으로 최대값 돌리는것도 생각해두자)
 		int max = Math.max(Math.max(temp[0], temp[1]), temp[2]);
 		
 		// 이렇게 강제로 넣으면 정렬할 필요가 없음
